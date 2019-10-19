@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button active 1`] = `
+<button
+  className="active"
+  disabled={false}
+  onClick={[Function]}
+>
+  Proceed
+</button>
+`;
+
+exports[`Storyshots Button default 1`] = `
+<button
+  className="inactive"
+  disabled={true}
+  onClick={[Function]}
+>
+  Proceed
+</button>
+`;
+
+exports[`Storyshots LoginForm default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "3rem",
+    }
+  }
+>
+  <div
+    className="content"
+  >
+    <input
+      onKeyPress={[Function]}
+      placeholder="Name please"
+      type="text"
+    />
+    <input
+      onKeyPress={[Function]}
+      placeholder="Password"
+      type="password"
+    />
+    <button
+      className="inactive"
+      disabled={true}
+      onClick={[Function]}
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots LoginForm empty 1`] = `
+<div
+  style={
+    Object {
+      "padding": "3rem",
+    }
+  }
+>
+  <div
+    className="content"
+  >
+    <input
+      onKeyPress={[Function]}
+      placeholder="Name please"
+      type="text"
+    />
+    <input
+      onKeyPress={[Function]}
+      placeholder="Password"
+      type="password"
+    />
+    <button
+      className="inactive"
+      disabled={true}
+      onClick={[Function]}
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots LoginForm filled 1`] = `
+<div
+  style={
+    Object {
+      "width": "50%",
+    }
+  }
+>
+  <div
+    className="content"
+  >
+    <input
+      onKeyPress={[Function]}
+      type="text"
+      value="Arwa Lokhandwala"
+    />
+    <input
+      onKeyPress={[Function]}
+      type="text"
+      value="arwa"
+    />
+    <button
+      className="active"
+      disabled={false}
+      onClick={[Function]}
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots LoginForm loading 1`] = `
+<div
+  style={
+    Object {
+      "padding": "3rem",
+    }
+  }
+>
+  <div
+    className="content"
+  >
+    <input
+      onKeyPress={[Function]}
+      placeholder="Name please"
+      type="text"
+    />
+    <input
+      onKeyPress={[Function]}
+      placeholder="Password"
+      type="password"
+    />
+    <button
+      className="inactive"
+      disabled={true}
+      onClick={[Function]}
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots User Input default 1`] = `
+<input
+  onKeyPress={true}
+  placeholder={true}
+  type="text"
+/>
+`;
+
+exports[`Storyshots User Input filled 1`] = `
+<input
+  onKeyPress={[Function]}
+  placeholder="Your awesome name"
+  type="text"
+  value="Arwa Lokhandwala"
+/>
+`;
+
+exports[`Storyshots User Input input 1`] = `
+<input
+  onKeyPress={[Function]}
+  placeholder="Your awesome name"
+  type="text"
+/>
+`;
