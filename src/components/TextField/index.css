@@ -1,0 +1,11 @@
+ input {
+    margin: 10px;
+    padding: 1em;
+    width: 60%;
+    background: #ffefd5;
+    border-radius: 1em;
+    border: none;
+    font-family: "Operator Mono SSm A", "Operator Mono SSm B", monospace;
+    font-size: 20px;
+    color: #8fbc8f;
+  }

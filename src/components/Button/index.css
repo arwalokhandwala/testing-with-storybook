@@ -1,0 +1,18 @@
+button {
+    margin: 2em;
+    padding: 1em;
+    border-radius: 1em;
+    width: 50%;
+    font-family: "Operator Mono SSm A", "Operator Mono SSm B", monospace;
+    font-size: 20px;
+  }
+
+.active {
+    color: white;
+    background: #4682b4;
+  }
+
+.inactive {
+    color: grey;
+    background: white;
+  }
