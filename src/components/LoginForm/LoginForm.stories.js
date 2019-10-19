@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import LoginForm from './'
 
-import { structure, actions } from '../TextField/TextField.stories'
+import { structure, actions } from '../InputField/InputField.stories'
 
 export const defaultValues = {
     name: {
