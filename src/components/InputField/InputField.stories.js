@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import { TextField } from './';
+import { InputField } from '.';
 
 export const structure = {
     placeholder: "Name please",
@@ -13,5 +13,5 @@ export const actions = {
 };
 
 storiesOf('User Input', module)
-    .add('default', () => <TextField structure={{ ...structure }} {...actions} />)
-    .add('filled', () => <TextField structure={{ ...structure, value: "Arwa Lokhandwala" }} {...actions} />)
+    .add('default', () => <InputField structure={{ ...structure }} {...actions} />)
+    .add('filled', () => <InputField structure={{ ...structure, value: "Arwa Lokhandwala" }} {...actions} />)
