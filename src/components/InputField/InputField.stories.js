@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 //For Knobs
 import { withKnobs, text, radios } from '@storybook/addon-knobs';
 
-import { InputField } from './';
+import { InputField } from '.';
 
 export const structure = {
     placeholder: "Name please",
