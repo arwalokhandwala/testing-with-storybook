@@ -1,20 +1,25 @@
 import React from 'react'
 
-import '../Button';
-import '../TextField';
+import { InputField } from '../InputField';
+import { Button } from '../Button';
 
 import './index.css';
-import { TextField } from '../TextField';
-import { Button } from '../Button';
 
 export default class LoginForm extends React.Component {
     render() {
-        const { name, password, submit } = this.props.fields
+        const { inputFields, actionHandlers } = this.props
         return (
             <div className="content">
-                <TextField {...name} />
-                <TextField {...password} />
-                <Button  {...submit} />
+                {
+                    inputFields.map(input => {
+                        return <InputField {...input}/>
+                    })
+                }
+                {
+                    actionHandlers.map(action => {
+                        return <Button {...action}/>
+                    })
+                }
             </div>)
     }
 }

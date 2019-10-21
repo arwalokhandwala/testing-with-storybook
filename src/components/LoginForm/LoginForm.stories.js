@@ -3,57 +3,68 @@ import { storiesOf } from '@storybook/react';
 
 import LoginForm from './'
 
-import { structure, actions } from '../TextField/TextField.stories'
+import {actions} from '../Button/Button.stories'
+import {actions as inputAction} from '../InputField/InputField.stories'
 
 export const defaultValues = {
-    name: {
-        structure: {
-            placeholder: "Name Please"
+    inputFields: [
+        {
+            structure: {
+                placeholder: "Name Please"
+            },
+            onKeyPress: (e) => {
+                console.log(e.target.value)
+            }
         },
-        onKeyPress: (e) => {
-            console.log(e.target.value)
+        {
+            structure: {
+                type: "password",
+                placeholder: "Enter Password"
+            },
+            onKeyPress: (e) => {
+                console.log(e.target.value)
+            }
         }
-    },
-    password: {
-        structure: {
-            type: "password",
-            placeholder: "Enter Password"
-        },
-        onKeyPress: (e) => {
-            console.log(e.target.value)
+    ],
+    actionHandlers: [
+        {
+            view: {
+                name: "Submit",
+                disabled: true
+            },
+            onClick: null
         }
-    },
-    submit: {
-        view: "Submit",
-        disabled: true
-    }
+    ]
 }
 
 export const filledValues = {
-    name: {
-        ...defaultValues.name,
-        structure: {
-            value: "Arwa Lokhandwala"
+    inputFields: [
+        {
+            structure: {
+                value: "Arwa Lokhandwala"
+            },
+            onKeyPress: inputAction.onKeyPress
+        },
+        {
+            structure: {
+                type: "password",
+                value: "arwa"
+            },
+            onKeyPress: inputAction.onKeyPress
         }
-    },
-    password: {
-        ...defaultValues.password,
-        structure: {
-            value: "arwa"
+    ],
+    actionHandlers: [
+        {
+            view: {
+                name: "Submit",
+                disabled: false
+            },
+            onClick: actions.onClick
         }
-    },
-    submit: {
-        ...defaultValues.submit,
-        view: {
-            disabled: false
-        }
-    }
+    ]
 }
 
 storiesOf('LoginForm', module)
     .addDecorator(story => <div style={{ width: "50%" }}>{story()}</div>)
-    .add('default', () => <LoginForm fields={{ ...defaultValues }} />)
-    .add('filled', () => <LoginForm fields={{ ...filledValues }} />)
-    // .add('withFilledValue', () => <LoginForm structure={{ ...structure, value: "Arwa Lokhandwala" }} {...actions} />)
-    // .add('loading', () => <LoginForm loading tasks={[]} {...actions} />)
-    // .add('empty', () => <LoginForm tasks={[]} {...actions} />);
+    .add('default', () => <LoginForm {...defaultValues}/>)
+    .add('filled', () => <LoginForm { ...filledValues }/>)
