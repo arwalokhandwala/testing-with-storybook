@@ -6,6 +6,7 @@ import LoginForm from './'
 import {actions} from '../Button/Button.stories'
 import {actions as inputAction} from '../InputField/InputField.stories'
 
+
 export const defaultValues = {
     inputFields: [
         {
