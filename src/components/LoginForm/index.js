@@ -11,13 +11,13 @@ export default class LoginForm extends React.Component {
         return (
             <div className="content">
                 {
-                    inputFields.map(input => {
-                        return <InputField {...input}/>
+                    inputFields.map((input,i) => {
+                        return <InputField key={`input-${i}`}{...input}/>
                     })
                 }
                 {
-                    actionHandlers.map(action => {
-                        return <Button {...action}/>
+                    actionHandlers.map((action,i) => {
+                        return <Button key={`action-${i}`} {...action}/>
                     })
                 }
             </div>)
