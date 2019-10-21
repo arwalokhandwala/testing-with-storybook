@@ -64,7 +64,7 @@ export const filledValues = {
     ]
 }
 
-storiesOf('LoginForm', module)
+storiesOf('Stories/LoginForm', module)
     .addDecorator(story => <div style={{ width: "50%" }}>{story()}</div>)
     .add('default', () => <LoginForm {...defaultValues}/>)
     .add('filled', () => <LoginForm { ...filledValues }/>)

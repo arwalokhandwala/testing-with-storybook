@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "start-server-and-test": "^1.10.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -13,7 +14,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "storybook-ci": "start-server-and-test storybook http://localhost:9009 test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,6 +34,7 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.2.4",
+    "@storybook/addon-knobs": "^5.2.4",
     "@storybook/addon-links": "^5.2.4",
     "@storybook/addon-storyshots": "^5.2.4",
     "@storybook/addons": "^5.2.4",
